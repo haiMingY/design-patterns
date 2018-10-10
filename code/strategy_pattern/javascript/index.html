@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="utf-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <title>Page Title</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <style>
+        * {
+            padding: 0;
+            margin: 0;
+            box-sizing: border-box;
+        }
+
+        #div {
+            width: 50px;
+            height: 50px;
+            position: fixed;
+            top: 0;
+            left: 0;
+            background-color: blueviolet;
+        }
+
+      .box {
+            margin-top: 80px;
+        }
+
+    </style>
+</head>
+
+<body>
+    <div id="div">
+
+    </div>
+    <div class="box">
+        <div id="radios">
+            <input type="radio" name="tween" id="linear" value="linear" checked>
+            <label for="linear">linear</label>
+            <input type="radio" name="tween" id="easeIn" value="easeIn">
+            <label for="easeIn">easeIn</label>
+            <input type="radio" name="tween" id="strongEaseIn" value="strongEaseIn">
+            <label for="strongEaseIn">strongEaseIn</label>
+            <input type="radio" name="tween" id="strongEaseOut" value="strongEaseOut">
+            <label for="strongEaseOut">strongEaseOut</label>
+            <input type="radio" name="tween" id="sineaseIn" value="sineaseIn">
+            <label for="sineaseIn">sineaseIn</label>
+            <input type="radio" name="tween" id="sineaseOut" value="sineaseOut">
+            <label for="sineaseOut">sineaseOut</label>
+        </div>
+        <div>
+            <label for="run_distance">运动距离</label>
+            <input type="text" id="run_distance" placeholder="运动距离">
+            <label for="run_time"> 运动时间</label>
+            <input type="text" id="run_time" placeholder="运动时间">
+        </div>
+        <button id="btn">开始</button>
+    </div>
+    <script src="index.js"></script>
+</body>
+
+</html>
